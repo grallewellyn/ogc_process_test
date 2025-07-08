@@ -1,0 +1,6 @@
+name: grace
+channels:
+  - conda-forge
+  - nodefaults  # force everything to come from conda-forge channel
+dependencies:
+  - python==3.10.10
