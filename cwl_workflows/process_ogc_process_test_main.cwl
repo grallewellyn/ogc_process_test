@@ -52,7 +52,7 @@ s:contributor:
   s:name: grallewellyn
 s:citation: https://github.com/grallewellyn/ogc_process_test.git
 s:codeRepository: https://github.com/grallewellyn/ogc_process_test.git
-s:commitHash: 72fc7310f8fe2343400a930eadd02260ad723cd5
+s:commitHash: cef743355410c97d37360b2e2287feaa8c341c51
 s:dateCreated: 2025-07-09
 s:license: https://github.com/grallewellyn/ogc-app-pack-generator/blob/main/LICENSE
 s:softwareVersion: 1.0.0
