@@ -46,13 +46,13 @@ $graph:
       type: Directory
 s:author:
 - class: s:Person
-  s:name: grallewellyn
+  s:name: arthurduf
 s:contributor:
 - class: s:Person
   s:name: grallewellyn
 s:citation: https://github.com/grallewellyn/ogc_process_test.git
 s:codeRepository: https://github.com/grallewellyn/ogc_process_test.git
-s:commitHash: cef743355410c97d37360b2e2287feaa8c341c51
+s:commitHash: 09279d99fa0be5180785f39de9b3fe5b61b2da94
 s:dateCreated: 2025-07-09
 s:license: https://github.com/grallewellyn/ogc-app-pack-generator/blob/main/LICENSE
 s:softwareVersion: 1.0.0
