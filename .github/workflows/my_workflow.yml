@@ -19,7 +19,7 @@ jobs:
         uses: MAAP-Project/ogc-app-pack-generator@main
         with:
           # Specify action inputs
-          workflow-configuration-path: grace/algorithm_config.yml
+          algorithm-configuration-path: grace/algorithm_config.yml
           dockerfile-path: grace/Dockerfile
           deploy-app-pack: true
           app-pack-register-endpoint: https://api.dit.maap-project.org/api/ogc/processes
