@@ -6,7 +6,7 @@ algorithm_version: 1
 keywords: test
 code_repository: https://github.com/grallewellyn/ogc_process_test.git
 citation: https://github.com/grallewellyn/ogc_process_test.git
-author: grallewellyn
+author: arthurduf
 contributor: grallewellyn
 license: https://github.com/grallewellyn/ogc-app-pack-generator/blob/main/LICENSE
 release_notes: None
