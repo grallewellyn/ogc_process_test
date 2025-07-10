@@ -10,7 +10,7 @@ author: arthurduf
 contributor: grallewellyn
 license: https://github.com/grallewellyn/ogc-app-pack-generator/blob/main/LICENSE
 release_notes: None
-run_command: /ogc_process_test/grace/print_script.sh
+run_command: /app/grace/print_script.sh
 ram_min: 5 # mebibytes
 cores_min: 1
 outdir_max: 20 # mebibytes
