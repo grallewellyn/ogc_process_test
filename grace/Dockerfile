@@ -1,5 +1,7 @@
 FROM debian
 
+RUN mkdir -p /app/grace
+
 # Copy application files to the /opt directory.
 COPY ./grace/print_script.sh /app/grace
 
