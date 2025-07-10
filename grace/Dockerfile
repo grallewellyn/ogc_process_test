@@ -2,8 +2,8 @@ FROM debian
 
 RUN mkdir -p /app/grace
 
-# Copy application files to the /opt directory.
-COPY ./print_script.sh /app/grace/print_script.sh
+# Fix the source path - script is in same directory as Dockerfile
+COPY print_script.sh /app/grace/print_script.sh
 
-# Assign execute permissions to the scripts.
+# Make it executable
 RUN chmod +x /app/grace/print_script.sh
