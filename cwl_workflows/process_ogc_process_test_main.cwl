@@ -32,7 +32,7 @@ $graph:
       ramMin: 5
       coresMin: 1
       outdirMax: 20
-  baseCommand: /ogc_process_test/grace/print_script.sh
+  baseCommand: /app/grace/print_script.sh
   inputs:
     to_print:
       type: string
