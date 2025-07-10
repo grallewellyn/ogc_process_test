@@ -32,7 +32,7 @@ $graph:
       ramMin: 5
       coresMin: 1
       outdirMax: 20
-  baseCommand: /app/grace/print_script.sh
+  baseCommand: /ogc_process_test/grace/print_script.sh
   inputs:
     to_print:
       type: string
@@ -52,7 +52,7 @@ s:contributor:
   s:name: grallewellyn
 s:citation: https://github.com/grallewellyn/ogc_process_test.git
 s:codeRepository: https://github.com/grallewellyn/ogc_process_test.git
-s:commitHash: 234fcd0ffcf6348b4394eaee300dcd61db2df175
+s:commitHash: fcf386518d07451a734b98ae2c60d88617788eeb
 s:dateCreated: 2025-07-10
 s:license: https://github.com/grallewellyn/ogc-app-pack-generator/blob/main/LICENSE
 s:softwareVersion: 1.0.0
