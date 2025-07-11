@@ -1,37 +1,21 @@
 cwlVersion: v1.2
 $graph:
 - class: Workflow
-  label: sardem-sarsen2
-  doc: This application is designed to process Synthetic Aperture Radar (SAR) data
-    from Sentinel-1 GRD (Ground Range Detected) products using a Digital Elevation
-    Model (DEM) obtained from Copernicus.
-  id: sardem-sarsen2
+  label: graceal
+  doc: Simple process for testing
+  id: graceal
   inputs:
-    bbox:
-      doc: Bounding box as 'LEFT BOTTOM RIGHT TOP'
-      label: bounding box
+    to_print:
+      doc: printing string
+      label: printing string
       type: string
-    stac_catalog_folder:
-      doc: STAC catalog folder
-      label: catalog folder
-      type: Directory
-    stac_asset_name:
-      doc: STAC asset name
-      label: asset name
-      type: string?
-  outputs:
-    out:
-      type: Directory
-      outputSource: process/outputs_result
+  outputs: {}
   steps:
     process:
       run: '#main'
       in:
-        bbox: bbox
-        stac_catalog_folder: stac_catalog_folder
-        stac_asset_name: stac_asset_name
-      out:
-      - outputs_result
+        to_print: to_print
+      out: []
 - class: CommandLineTool
   id: main
   requirements:
@@ -43,41 +27,27 @@ $graph:
       ramMin: 5
       coresMin: 1
       outdirMax: 20
-  baseCommand: /app/sardem-sarsen/sardem-sarsen.sh
+  baseCommand: /app/grace/print_script.sh
   inputs:
-    bbox:
+    to_print:
       type: string
       inputBinding:
         position: 1
-        prefix: --bbox
-    stac_catalog_folder:
-      type: Directory
-      inputBinding:
-        position: 2
-        prefix: --stac_catalog_folder
-    stac_asset_name:
-      type: string?
-      inputBinding:
-        position: 3
-        prefix: --stac_asset_name
-  outputs:
-    outputs_result:
-      outputBinding:
-        glob: ./output*
-      type: Directory
+        prefix: --to_print
+  outputs: {}
 s:author:
 - class: s:Person
-  s:name: arthurduf
+  s:name: grallewellyn
 s:contributor:
 - class: s:Person
-  s:name: arthurduf
-s:citation: https://github.com/MAAP-Project/sardem-sarsen.git
-s:codeRepository: https://github.com/MAAP-Project/sardem-sarsen.git
-s:commitHash: 1f4458c0fa4a63c2897247235d6d94a2e3100c35
-s:dateCreated: 2025-07-10
+  s:name: grallewellyn
+s:citation: https://github.com/grallewellyn/ogc_process_test.git
+s:codeRepository: https://github.com/grallewellyn/ogc_process_test.git
+s:commitHash: 1d2b433595684722857aa0233f8f222f926945a2
+s:dateCreated: 2025-07-11
 s:license: https://github.com/MAAP-Project/sardem-sarsen/blob/main/LICENSE
 s:softwareVersion: 1.0.0
-s:version: mlucas_nasa_ogc2
+s:version: test
 s:releaseNotes: None
 s:keywords: ogc, sar
 $namespaces:
