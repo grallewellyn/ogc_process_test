@@ -1,0 +1,22 @@
+# Input params for OGC application package generator
+# The information provided in this file supports CWL and OGC best practices
+algorithm_description: Simple process for testing
+algorithm_name: graceal
+algorithm_version: test
+keywords: ogc, sar
+code_repository: https://github.com/grallewellyn/ogc_process_test.git
+citation: https://github.com/grallewellyn/ogc_process_test.git
+author: grallewellyn
+contributor: grallewellyn
+license: https://github.com/MAAP-Project/sardem-sarsen/blob/main/LICENSE
+release_notes: None
+run_command: /app/grace/print_script.sh
+ram_min: 5 # mebibytes
+cores_min: 1
+outdir_max: 20 # mebibytes
+
+inputs:
+  - name: to_print
+    doc: printing string
+    label: printing string
+    type: string
